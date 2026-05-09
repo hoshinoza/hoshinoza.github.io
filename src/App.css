@@ -47,3 +47,7 @@ main {
 .concept p {
   margin-bottom: 1.5rem;
 }
+
+.concept p:last-child {
+  margin-bottom: 0;
+}
