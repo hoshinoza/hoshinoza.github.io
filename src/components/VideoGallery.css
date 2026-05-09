@@ -1,6 +1,6 @@
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -37,6 +37,8 @@
   font-weight: 600;
   text-align: center;
   color: #fff;
+  text-wrap: balance;
+  line-height: 1.4;
 }
 
 h2 {
@@ -45,4 +47,21 @@ h2 {
   margin-bottom: 3rem;
   color: #fff;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  text-wrap: balance;
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .video-title {
+    font-size: 1rem;
+  }
 }
